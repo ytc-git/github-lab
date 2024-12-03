@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: '{https://github.com/ytc-git/github-lab.git}'
+                git branch: 'main', url: 'https://github.com/ytc-git/github-lab.git'
             }
         }
         stage('Install Terraform') {
